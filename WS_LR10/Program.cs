@@ -19,7 +19,7 @@ class HandlerClass
 {
     public void HandleEvent(string name)
     {
-        Console.WriteLine($"Event handled by {name}");
+        Console.WriteLine($"Событие - {name}");
     }
 }
 
@@ -27,8 +27,8 @@ class Program
 {
     static void Main()
     {
-        EventClass obj1 = new EventClass("Object 1");
-        EventClass obj2 = new EventClass("Object 2");
+        EventClass obj1 = new EventClass("Объект 1");
+        EventClass obj2 = new EventClass("Объект 2");
         HandlerClass handler = new HandlerClass();
 
         obj1.Event += handler.HandleEvent;
